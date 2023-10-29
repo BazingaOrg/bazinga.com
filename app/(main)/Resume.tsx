@@ -1,11 +1,11 @@
-import Image, { type StaticImageData } from 'next/image'
+import { type StaticImageData } from 'next/image'
 import React from 'react'
 
-import { BriefcaseIcon } from '~/assets'
-import eightNinthsLogo from '~/assets/company/8ninths.jpeg'
-import abletiveLogo from '~/assets/company/abletive.png'
-import vvsLogo from '~/assets/company/vvs.png'
-import zolplayLogo from '~/assets/company/zolplay.png'
+import { BriefcaseIcon, SparkleIcon } from '~/assets'
+// import eightNinthsLogo from '~/assets/company/8ninths.jpeg'
+// import abletiveLogo from '~/assets/company/abletive.png'
+// import vvsLogo from '~/assets/company/vvs.png'
+// import zolplayLogo from '~/assets/company/zolplay.png'
 
 type Resume = {
   company: string
@@ -14,53 +14,55 @@ type Resume = {
   end: string | { label: string; dateTime: number }
   logo: StaticImageData
 }
-const resume: Resume[] = [
-  {
-    company: '深圳市佐玩信息技术有限公司',
-    title: '创始人 CEO',
-    logo: zolplayLogo,
-    start: '2021',
-    end: {
-      label: '至今',
-      dateTime: new Date().getFullYear(),
-    },
-  },
-  {
-    company: 'very very spaceship',
-    title: '软件工程师',
-    logo: vvsLogo,
-    start: '2018',
-    end: '2020',
-  },
-  {
-    company: '8ninths Inc.',
-    title: 'AR & 全栈工程师',
-    logo: eightNinthsLogo,
-    start: '2017',
-    end: '2018',
-  },
-  {
-    company: 'Abletive',
-    title: '创始人',
-    logo: abletiveLogo,
-    start: '2014',
-    end: '2016',
-  },
-]
+// const resume: Resume[] = [
+//   {
+//     company: '深圳市佐玩信息技术有限公司',
+//     title: '创始人 CEO',
+//     logo: zolplayLogo,
+//     start: '2021',
+//     end: {
+//       label: '至今',
+//       dateTime: new Date().getFullYear(),
+//     },
+//   },
+//   {
+//     company: 'very very spaceship',
+//     title: '软件工程师',
+//     logo: vvsLogo,
+//     start: '2018',
+//     end: '2020',
+//   },
+//   {
+//     company: '8ninths Inc.',
+//     title: 'AR & 全栈工程师',
+//     logo: eightNinthsLogo,
+//     start: '2017',
+//     end: '2018',
+//   },
+//   {
+//     company: 'Abletive',
+//     title: '创始人',
+//     logo: abletiveLogo,
+//     start: '2014',
+//     end: '2016',
+//   },
+// ]
 
-function getRoleDate(date: Resume['start'] | Resume['end'], label = true) {
-  if (typeof date === 'string') {
-    return date
-  }
+// function getRoleDate(date: Resume['start'] | Resume['end'], label = true) {
+//   if (typeof date === 'string') {
+//     return date
+//   }
 
-  if (label) {
-    return date.label
-  } else {
-    return String(date.dateTime)
-  }
-}
+//   if (label) {
+//     return date.label
+//   } else {
+//     return String(date.dateTime)
+//   }
+// }
 
 export function Resume() {
+  const emptyProject = <p className="text-zinc-500 dark:text-zinc-400 flex items-center"><SparkleIcon className='mr-1'/>暂无工作经历，晚点就有啦</p>
+
   return (
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
       <h2 className="flex items-center text-sm font-semibold text-zinc-900 dark:text-zinc-100">
@@ -68,7 +70,8 @@ export function Resume() {
         <span className="ml-2">工作经历</span>
       </h2>
       <ol className="mt-6 space-y-4">
-        {resume.map((role, roleIndex) => (
+        {emptyProject}
+        {/* {resume.map((role, roleIndex) => (
           <li key={roleIndex} className="flex gap-4">
             <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
               <Image
@@ -104,7 +107,7 @@ export function Resume() {
               </dd>
             </dl>
           </li>
-        ))}
+        ))} */}
       </ol>
     </div>
   )
