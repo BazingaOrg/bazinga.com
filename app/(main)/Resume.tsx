@@ -5,7 +5,6 @@ import { BriefcaseIcon, SparkleIcon } from '~/assets'
 // import eightNinthsLogo from '~/assets/company/8ninths.jpeg'
 // import abletiveLogo from '~/assets/company/abletive.png'
 // import vvsLogo from '~/assets/company/vvs.png'
-// import zolplayLogo from '~/assets/company/zolplay.png'
 
 type Resume = {
   company: string
@@ -15,15 +14,6 @@ type Resume = {
   logo: StaticImageData
 }
 // const resume: Resume[] = [
-//   {
-//     company: '深圳市佐玩信息技术有限公司',
-//     title: '创始人 CEO',
-//     logo: zolplayLogo,
-//     start: '2021',
-//     end: {
-//       label: '至今',
-//       dateTime: new Date().getFullYear(),
-//     },
 //   },
 //   {
 //     company: 'very very spaceship',
