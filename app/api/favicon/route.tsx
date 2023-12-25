@@ -12,12 +12,12 @@ function getKey(url: string) {
 
 const faviconMapper: { [key: string]: string } = {
   '((?:zolplay.cn)|(?:zolplay.com)|(?:cn.zolplay.com))':
-    'https://bazinga.so/favicons/zolplay.png',
-  '(?:github.com)': 'https://bazinga.so/favicons/github.png',
-  '((?:t.co)|(?:twitter.com))': 'https://bazinga.so/favicons/twitter.png',
-  'coolshell.cn': 'https://bazinga.so/favicons/coolshell.png',
-  'vercel.com': 'https://bazinga.so/favicons/vercel.png',
-  'nextjs.org': 'https://bazinga.so/favicons/nextjs.png',
+    'http://www.bazinga.ink/favicons/zolplay.png',
+  '(?:github.com)': 'http://www.bazinga.ink/favicons/github.png',
+  '((?:t.co)|(?:twitter.com))': 'http://www.bazinga.ink/favicons/twitter.png',
+  'coolshell.cn': 'http://www.bazinga.ink/favicons/coolshell.png',
+  'vercel.com': 'http://www.bazinga.ink/favicons/vercel.png',
+  'nextjs.org': 'http://www.bazinga.ink/favicons/nextjs.png',
 }
 
 function getPredefinedIconForUrl(url: string): string | undefined {
@@ -62,7 +62,7 @@ export async function GET(req: NextRequest) {
     return NextResponse.error()
   }
 
-  let iconUrl = 'https://bazinga.so/favicon_blank.png'
+  let iconUrl = 'www.bazinga.ink/favicon_blank.png'
 
   try {
     const predefinedIcon = getPredefinedIconForUrl(url)

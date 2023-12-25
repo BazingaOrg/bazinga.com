@@ -6,12 +6,12 @@ import { Button, Heading, Hr, Img, Link, Section, Text } from './_components'
 import Layout from './Layout'
 
 const NewReplyCommentEmail = ({
-  postLink = 'https://bazinga.so',
+  postLink = 'http://www.bazinga.ink',
   postTitle = '测试文章 Lorem ipsum dolor sit amet, consectetur adipisicing elit',
   postImageUrl = 'https://cn.zolplay.com/api/og?title=测试文章',
   userFirstName = 'Cali',
   userLastName = 'Castle',
-  userImageUrl = 'https://bazinga.so/icon.png',
+  userImageUrl = 'http://www.bazinga.ink/icon.png',
   commentContent = '*测试评论*\n- Wow wtf\n- Cool',
 }: {
   postLink?: string | null

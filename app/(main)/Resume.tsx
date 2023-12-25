@@ -7,7 +7,7 @@ import { BriefcaseIcon, SparkleIcon } from '~/assets'
 // import vvsLogo from '~/assets/company/vvs.png'
 
 type Resume = {
-  company: string
+  // company: string
   title: string
   start: string | { label: string; dateTime: number }
   end: string | { label: string; dateTime: number }

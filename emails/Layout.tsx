@@ -44,7 +44,7 @@ export default function Layout({
               />
               <Text className="text-center">
                 <Link
-                  href="https://bazinga.so"
+                  href="http://www.bazinga.ink"
                   className="text-zinc-700 underline"
                 >
                   <strong>Cali Castle</strong>
@@ -54,28 +54,28 @@ export default function Layout({
               </Text>
               <Text className="text-center">
                 <Link
-                  href="https://bazinga.so/twitter"
+                  href="http://www.bazinga.ink/twitter"
                   className="text-xs text-zinc-600 underline"
                 >
                   Twitter
                 </Link>{' '}
                 |&nbsp;
                 <Link
-                  href="https://bazinga.so/youtube"
+                  href="http://www.bazinga.ink/youtube"
                   className="text-xs text-zinc-600 underline"
                 >
                   YouTube
                 </Link>{' '}
                 |&nbsp;
                 <Link
-                  href="https://bazinga.so/github"
+                  href="http://www.bazinga.ink/github"
                   className="text-xs text-zinc-600 underline"
                 >
                   GitHub
                 </Link>{' '}
                 |&nbsp;
                 <Link
-                  href="https://bazinga.so/bilibili"
+                  href="http://www.bazinga.ink/bilibili"
                   className="text-xs text-zinc-600 underline"
                 >
                   哔哩哔哩

@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     siteName: 'Bazinga',
     locale: 'zh_CN',
     type: 'website',
-    url: 'https://bazinga.so',
+    url: 'http://www.bazinga.ink',
   },
   twitter: {
     site: '@thecalicastle',
