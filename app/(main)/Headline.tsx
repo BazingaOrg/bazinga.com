@@ -3,15 +3,16 @@
 import { motion } from 'framer-motion'
 import Balancer from 'react-wrap-balancer'
 
-import { SparkleIcon } from '~/assets'
+import { HourglassIcon } from '~/assets'
 import { SocialLink } from '~/components/links/SocialLink'
 
 function Developer() {
   return (
     <span className="group">
       <span className="font-mono">&lt;</span>Developer
-      <span className="font-mono">/&gt;</span> 🧑🏻‍💻
+      <span className="font-mono">/&gt;</span>
       <span className="invisible inline-flex text-zinc-300 before:content-['|'] group-hover:visible group-hover:animate-typing dark:text-zinc-500" />
+      🧑🏻‍💻
     </span>
   )
 }
@@ -19,7 +20,7 @@ function Developer() {
 function OCD() {
   return (
     <span className="group">
-      <SparkleIcon className="mr-1 inline-flex transform-gpu transition-transform duration-500 group-hover:rotate-180" />
+      <HourglassIcon className="mr-1 inline-flex transform-gpu transition-transform duration-500 group-hover:rotate-180" />
       <span>I live and I lived 🤪</span>
     </span>
   )
@@ -40,8 +41,8 @@ export function Headline() {
         }}
       >
         <Developer />
-         <br />
-         <OCD />
+        <br />
+        <OCD />
       </motion.h1>
       <motion.p
         className="mt-6 text-base text-zinc-600 dark:text-zinc-400"
@@ -56,7 +57,11 @@ export function Headline() {
         }}
       >
         <Balancer>
-          {`Hi, I'm Bazinga 👋。`}
+          嗨 👋 , 我是 Bazinga ！这空间或许承载着对生活的一些感慨 🥴
+          ，也可能记录了一些技术的折腾 🤔 。我想记录我的想法 ✍️
+          ，将其作为我思考的快照 📸 ，供未来的我参考 😃
+          。也许未来的我会证明现在的我错了 🤯 ，也许错的是未来的我 🫨
+          。不管怎样，这对我自己来说都是有意义的 ✌️ 。
         </Balancer>
       </motion.p>
       <motion.div
@@ -77,19 +82,14 @@ export function Headline() {
           platform="twitter"
         />
         <SocialLink
-          href="https://space.bilibili.com/142160958?spm_id_from=333.1007.0.0"
-          aria-label="我的 Bilibili"
-          platform="bilibili"
-        />
-        <SocialLink
           href="https://github.com/BazingaOrg"
           aria-label="我的 GitHub"
           platform="github"
         />
         <SocialLink
-          href="mailto:hi@bazinga.so"
-          aria-label="我的邮箱"
-          platform="mail"
+          href="https://space.bilibili.com/142160958"
+          aria-label="我的 Bilibili"
+          platform="bilibili"
         />
       </motion.div>
     </div>
