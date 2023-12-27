@@ -4,21 +4,25 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import React from 'react'
 
-import image5 from '~/assets/highlights/highlight-afternoon-sunshine.jpeg'
-import image1 from '~/assets/highlights/highlight-art-exhibition.jpg'
-import image3 from '~/assets/highlights/highlight-fallen-leaves.jpeg'
-import image6 from '~/assets/highlights/highlight-lake-plant.jpeg'
-import image2 from '~/assets/highlights/highlight-lake-sunset.jpeg'
-import image4 from '~/assets/highlights/highlight-leifeng-pagoda.jpg'
+import image4 from '~/assets/highlights/highlight-4-back.jpg'
+import image7 from '~/assets/highlights/highlight-7-morning.jpg'
+import image8 from '~/assets/highlights/highlight-8-west-lake.jpg'
+import image1 from '~/assets/highlights/hightlight-1-sea.jpg'
+import image2 from '~/assets/highlights/hightlight-2-shot.jpg'
+import image3 from '~/assets/highlights/hightlight-3-bike.jpg'
+import image5 from '~/assets/highlights/hightlight-5-clothes.jpg'
+import image6 from '~/assets/highlights/hightlight-6-shoes.jpg'
 
-const images = [image5, image3, image1, image4, image2, image6]
+const images = [image1, image2, image3, image4, image5, image6, image7, image8]
 const alts = [
-  '第一次骑行八公里的下午',
-  '一叶知秋',
-  '美术馆看展',
-  '西湖边的植物',
-  '西湖边的落日',
-  '西湖',
+  '朱家尖沙滩上的人们',
+  '普陀山被朋友抓拍',
+  '环西湖骑行',
+  '西湖美术馆旁边的湖边被拍',
+  '双十一激情下单JavaScript工程师懂得都懂的长袖',
+  '穿了5年的 Converse One Star Pro',
+  '早晨的西湖',
+  '秋季下午的西湖',
 ]
 
 export function Photos() {
